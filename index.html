@@ -16,8 +16,19 @@
     -->
     <link rel="manifest" href="/manifest.json" />
     <title>Career Coach</title>
-    <script type="module" crossorigin src="index-pbStILU5.js"></script>
-    <link rel="stylesheet" crossorigin href="index-BGlng7_6.css">
+    <script>
+      (function () {
+        try {
+          var stored = window.localStorage.getItem('coach.theme');
+          var theme = stored === 'light' || stored === 'dark'
+            ? stored
+            : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+          if (theme === 'light') document.documentElement.classList.add('light');
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="index-Bqld1pMF.js"></script>
+    <link rel="stylesheet" crossorigin href="index-CcyI8xpp.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
