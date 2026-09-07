@@ -15,6 +15,18 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="/manifest.json" />
+    <!--
+      Preconnect vroeg naar de origins die anders pas na het laden/parsen van de
+      JS-bundle worden aangesproken. Dit knipt hops uit de kritieke keten:
+      HTML -> JS -> CSS(@import font) -> font-css -> font-bestand, en
+      HTML -> JS -> eerste API-call.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://dev-coach-backend.azurewebsites.net" crossorigin />
+    <!-- Direct als <link> geladen i.p.v. via een @import in de CSS-bundle, zodat het
+         font-stylesheet parallel aan de HTML start in plaats van pas na de JS/CSS-chunk. -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
     <title>Career Coach</title>
     <script>
       (function () {
@@ -27,8 +39,8 @@
         } catch (e) {}
       })();
     </script>
-    <script type="module" crossorigin src="index-C6_Gfmon.js"></script>
-    <link rel="stylesheet" crossorigin href="index-CnoHoAS1.css">
+    <script type="module" crossorigin src="index-tIz4IFhf.js"></script>
+    <link rel="stylesheet" crossorigin href="index-DYy0W27N.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
