@@ -1,0 +1,1 @@
+import{l as e}from"./index-BE_miv9s.js";var t=e();function n({date:e}){if(!e)return null;let n=Math.ceil((new Date(e)-new Date)/864e5);return(0,t.jsx)(`span`,{className:`text-[11px] ${n<14?`text-warning`:n<30?`text-loopbaan`:`text-success`}`,children:e})}export{n as t};

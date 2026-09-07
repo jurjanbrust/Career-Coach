@@ -1,0 +1,1 @@
+import{n as e,r as t}from"./index-BE_miv9s.js";function n(e){t(e,[/\r?\n|\r/g,r])}function r(){return{type:`break`}}function i(){return function(e){n(e)}}var a=[e,i];export{a as t};
