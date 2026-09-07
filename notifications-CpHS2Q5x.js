@@ -1,0 +1,1 @@
+function e(e,t=`info`){typeof window>`u`||window.dispatchEvent(new CustomEvent(`coach:notify`,{detail:{message:e,type:t}}))}function t(t){e(t,`success`)}function n(t){e(t,`error`)}function r(t){e(t,`info`)}export{t as i,n,r,e as t};
