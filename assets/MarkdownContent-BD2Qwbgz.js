@@ -1,0 +1,1 @@
+import{f as e,n as t,r as n}from"./index-BBAtxUlp.js";var r=e();function i({content:e,className:i}){return e?(0,r.jsx)(`div`,{className:`prose prose-invert prose-sm max-w-none break-words [&_p]:my-1 [&_ul]:my-1 [&_ol]:my-1 ${i??``}`,children:(0,r.jsx)(n,{remarkPlugins:t,children:e})}):null}export{i as t};
