@@ -1,0 +1,1 @@
+import{i as e,p as t,r as n}from"./index-4RLu7LYU.js";var r=t();function i({content:t,className:i}){return t?(0,r.jsx)(`div`,{className:`prose prose-invert prose-sm max-w-none break-words [&_p]:my-1 [&_ul]:my-1 [&_ol]:my-1 ${i??``}`,children:(0,r.jsx)(e,{remarkPlugins:n,children:t})}):null}export{i as t};
