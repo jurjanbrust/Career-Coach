@@ -1,0 +1,1 @@
+import{s as e}from"./I18nContext-BCpY07ek.js";import{a as t,o as n}from"./index-D6FH4KY2.js";var r=e();function i({content:e,className:i}){return e?(0,r.jsx)(`div`,{className:`prose prose-invert prose-sm max-w-none break-words [&_p]:my-1 [&_ul]:my-1 [&_ol]:my-1 ${i??``}`,children:(0,r.jsx)(n,{remarkPlugins:t,children:e})}):null}export{i as t};
